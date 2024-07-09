@@ -67,7 +67,6 @@ namespace MinesweeperApiServer.Models
                 Completed = true;
                 Mines.Clear();
                 RelivedCells.Clear();
-                CompletedField.ForEach(x => x.Clear());
                 return; // game over
             }
 
@@ -166,7 +165,6 @@ namespace MinesweeperApiServer.Models
                 Field = CompletedField;
                 Mines.Clear();
                 RelivedCells.Clear();
-                CompletedField.ForEach(x => x.Clear());
             }
         }
 
